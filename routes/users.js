@@ -2,7 +2,6 @@ import express from 'express';
 import { getUsers, getUser, createUser, updateUser, deleteUser } from "../controllers/users.js";
 
 const router = express.Router();
-let users = []
 
 // all routes in here start with /users thanks to the "/users" enpoint in index.js, so no need to add it in the endpoint on this file.
 router.get('/', getUsers);
